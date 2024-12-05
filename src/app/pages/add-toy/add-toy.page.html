@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Add Toy</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <form (submit)="addToy()">
+      <ion-item>
+        <ion-label position="floating">Toy Name</ion-label>
+        <ion-input [(ngModel)]="name" name="name" required></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Description</ion-label>
+        <ion-input [(ngModel)]="description" name="description" required></ion-input>
+      </ion-item>
+  
+      <ion-button expand="full" type="submit" color="primary">Add Toy</ion-button>
+    </form>
+  </ion-content>
+  
